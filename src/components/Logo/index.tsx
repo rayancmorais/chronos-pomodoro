@@ -1,4 +1,4 @@
-import {TimerIcon} from 'lucide-react';
+import { TimerIcon } from 'lucide-react';
 import styles from './styles.module.css';
 
 export function Logo() {
@@ -10,8 +10,4 @@ export function Logo() {
       </a>
     </div>
   );
-}
-
-{
-  /* <TimerIcon size={64} /> */
 }
