@@ -1,8 +1,10 @@
-import {Home} from './pages/Home';
+import { Home } from './pages/Home';
+
 import './styles/theme.css';
 import './styles/global.css';
-import {TaskStateModel} from './Models/TaskStateModel';
-import {useState} from 'react';
+import { useState } from 'react';
+import { TaskStateModel } from './models/TaskStateModel';
+import { TaskContextProvider } from './contexts/TaskContext';
 
 const initialState: TaskStateModel = {
   tasks: [],
@@ -16,8 +18,13 @@ const initialState: TaskStateModel = {
     longBreakTime: 15,
   },
 };
+
 export function App() {
   const [state, setState] = useState(initialState);
-  console.log('App', state);
-  return <Home />;
+
+  return (
+    <TaskContextProvider>
+      <Home />
+    </TaskContextProvider>
+  );
 }

@@ -1,7 +1,7 @@
-import {PlayCircleIcon} from 'lucide-react';
-import {Cycles} from '../Cycles';
-import {DefaultButton} from '../DefaultButton';
-import {DefaultInput} from '../DefaultInput';
+import { PlayCircleIcon } from 'lucide-react';
+import { Cycles } from '../Cycles';
+import { DefaultButton } from '../DefaultButton';
+import { DefaultInput } from '../DefaultInput';
 
 export function MainForm() {
   return (
@@ -16,7 +16,7 @@ export function MainForm() {
       </div>
 
       <div className='formRow'>
-        <p>Proximo intervalo é de 25min.</p>
+        <p>Próximo intervalo é de 25min</p>
       </div>
 
       <div className='formRow'>
