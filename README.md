@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# ⏳ Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A sleek, productivity-focused Pomodoro timer built with React and TypeScript.**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About the Project
 
-## Expanding the ESLint configuration
+Chronos Pomodoro is a modern web application designed to help you implement the **Pomodoro Technique®** and maximize your focus. By breaking your work sessions into focused intervals (typically 25 minutes) separated by short breaks, Chronos helps you combat burnout and maintain peak productivity.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is a strong demonstration of building robust, type-safe frontend applications using the React ecosystem.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Key Features
+
+* **Customizable Timers:** Easily set and switch between Pomodoro, Short Break, and Long Break durations.
+* **Intuitive UI:** A clean, minimal design that keeps the focus on your work.
+* **Session Tracking:** Simple visual or audible cues to notify you when a session ends.
+* **Type Safety:** Developed entirely with **TypeScript** for better maintainability and fewer runtime errors.
+* **Fast Development:** Built using **Vite** for blazing-fast cold starts and module hot-reloading.
+
+---
+
+## 🛠 Tech Stack
+
+Chronos Pomodoro is built with the following technologies:
+
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend Framework** | **React** (with Hooks) | For building the user interface components. |
+| **Language** | **TypeScript** | Ensures type safety and improves code quality. |
+| **Build Tool** | **Vite** | Next-generation frontend tooling for speed and performance. |
+| **Styling** | **CSS Modules** | Component-scoped styling for modularity. |
+| **Code Quality** | **ESLint** & **Prettier** | Maintaining consistent code style and catching errors. |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to get a copy of the project up and running on your local machine for development and testing.
+
+### Prerequisites
+
+You must have **Node.js** and **npm** (or **yarn** / **pnpm**) installed on your system.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/rayancmorais/chronos-pomodoro.git](https://github.com/rayancmorais/chronos-pomodoro.git)
+    cd chronos-pomodoro
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+---
+
+## 💻 Usage
+
+### Development Mode
+
+To run the application in development mode with hot-reloading:
+
+```bash
+npm run dev
 ```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👋 Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
